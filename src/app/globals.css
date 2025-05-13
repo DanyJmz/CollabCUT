@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 200 17% 94%; /* #ecf0f1 neutral gray for page backgrounds */
+    --foreground: 210 20% 20%; /* dark gray for text */
+    --card: 0 0% 100%; /* white cards */
+    --card-foreground: 210 20% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 20%;
+    --primary: 173 58% 39%; /* #2E8B57 - Chart green for primary actions */
+    --primary-foreground: 0 0% 100%; /* white text on primary */
+    --secondary: 210 15% 88%; /* lighter gray for secondary elements, subtle backgrounds */
+    --secondary-foreground: 210 20% 25%; /* slightly darker text for secondary */
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 15% 45%;
+    --accent: 45 90% 55%; /* Vibrant gold - success, highlights */
+    --accent-foreground: 210 20% 20%; /* dark gray text on accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 15% 80%;
+    --input: 0 0% 97%; /* very light input bg, slightly off-white for inputs on light cards */
+    --ring: 173 58% 39%; /* primary (chart green) for focus rings */
+    --radius: 0.5rem;
+
+    /* Chart Colors */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%; /* This is the target green */
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Sidebar Specific Colors - Light Theme */
+    --sidebar-background: 220 10% 15%; /* Dark neutral gray */
+    --sidebar-foreground: 0 0% 95%; /* Off-white/light gray text */
+    --sidebar-primary: 173 58% 45%; /* Chart green, slightly lighter for sidebar */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 25%; /* Hover color for sidebar items (lighter gray) */
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 10% 10%; /* Border color within/around sidebar (darker gray) */
+    --sidebar-ring: 173 58% 45%; /* Ring color (chart green, slightly lighter) for focusable elements in sidebar */
+  }
+
+  .dark {
+    --background: 210 20% 10%; /* Dark blue/gray for page backgrounds */
+    --foreground: 200 17% 94%; /* Light gray text */
+    --card: 210 20% 13%; /* Slightly lighter dark for cards */
+    --card-foreground: 200 17% 94%;
+    --popover: 210 20% 13%;
+    --popover-foreground: 200 17% 94%;
+    --primary: 173 58% 39%; /* Chart green for primary actions */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 210 15% 18%; /* Darker gray for secondary elements */
+    --secondary-foreground: 200 17% 90%;
+    --muted: 210 15% 22%;
+    --muted-foreground: 200 17% 60%;
+    --accent: 45 90% 55%; /* Vibrant gold - success, highlights */
+    --accent-foreground: 210 20% 20%; /* dark gray text on accent */
+    --destructive: 0 72% 51%; /* Darker red for destructive actions */
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 15% 25%;
+    --input: 210 15% 16%; /* Dark input background */
+    --ring: 173 58% 39%; /* Primary (chart green) for focus rings */
+
+    /* Chart Colors (dark theme, can be themed if necessary) */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%; /* Note: This var(--chart-2) is different in dark theme in original, keeping it as is, the primary color is now unified */
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    
+    /* Sidebar Specific Colors - Dark Theme */
+    --sidebar-background: 220 10% 10%; /* Very dark neutral gray for dark mode sidebar */
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 173 58% 45%; /* Consistent chart green, slightly lighter for sidebar */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 20%; /* Hover color for dark sidebar items (darker gray) */
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 10% 5%; /* Border color within/around dark sidebar (very dark gray) */
+    --sidebar-ring: 173 58% 45%; /* Ring color (chart green, slightly lighter) for focusable elements in dark sidebar */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
