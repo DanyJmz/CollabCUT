@@ -1,6 +1,6 @@
 📘 Manual de Usuario para Ejecutar CollabCUT
 
-Este manual proporciona una guía paso a paso para instalar, configurar y ejecutar el proyecto CollabCUT en un entorno local de desarrollo.
+Este manual proporciona una guía paso a paso para instalar y ejecutar el proyecto CollabCUT en un entorno local de desarrollo.
 
 ---
 
@@ -18,13 +18,9 @@ Antes de ejecutar el proyecto, asegúrate de tener instaladas las siguientes her
 ## 📦 Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/collabcut.git
+git clone https://github.com/DanyJmz/CollabCUT
 cd CollabCUT
 ```
-
-> Reemplaza la URL por la dirección real de tu repositorio si es diferente.
-
----
 
 ## 🚀 Instalación de Dependencias
 
